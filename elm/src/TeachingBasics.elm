@@ -317,7 +317,7 @@ divisibleByFive =
 
 listOfDivisions : List (Int -> Bool)
 listOfDivisions =
-    [ divisibleBy 3, divisibleBy 5 ]
+    [ divisibleBy 3, divisibleByFive ]
 
 
 
@@ -332,3 +332,20 @@ numbersDivisibleByNineSquared =
         -- Filter values not divisible by 9
         -- And square the result
         |> List.map (\num -> num * num)
+
+
+
+-- In non-functional land:
+-- let x = 7;
+-- let y = a(x);
+--
+-- console.log(x); // What is x?
+--
+-- let z = a(b(c(d(e(x)))));
+-- console.log(x); // What is x?
+--
+-- In functional land, x is guaranteed to be 7
+--
+--
+-- Remember: Asynchronous Programming,
+-- Language Guarantees, Relation to Math,

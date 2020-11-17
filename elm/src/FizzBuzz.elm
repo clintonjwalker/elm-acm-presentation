@@ -20,6 +20,11 @@ rules =
     [ ( multipleOf 3, "Fizz" ), ( multipleOf 5, "Buzz" ), ( isInTheFifties, "Baz" ) ]
 
 
+
+-- multipleOf: Int -> Int -> Bool
+-- (multipleOf 3): Int -> Bool
+
+
 matchNumberToRules : Int -> List Rule
 matchNumberToRules num =
     rules
