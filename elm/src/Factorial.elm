@@ -6,7 +6,10 @@ module Factorial exposing (badFactorial, factorial)
 
 badFactorial : Int -> Int
 badFactorial num =
-    num * badFactorial (num - 1)
+    if num == 1 then
+        1
+    else
+        num * badFactorial (num - 1)
 
 
 tailFact : Int -> Int -> Int
